@@ -1,7 +1,7 @@
 int main(){
-  int X2[4] ={10,20,30,40};
-  char X1[4] = {"halo"};
-  float X4[4] ={10.0,20.0,30.0,40.0};
+  int X2[4];
+  char X1[4];
+  float X4[4];
   double X8[4];
 
 for (int i=0;i<4;i++){
