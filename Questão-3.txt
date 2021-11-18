@@ -1,0 +1,8 @@
+p = i; 		  ---> correto
+q = &j;		  ---> correto
+p = &*&i;	  ---> correto
+i = (*&)j;	  ---> incorreto
+i = *&j;	  ---> correto
+i = *&*&j;	  ---> correto
+q = *p;		  ---> correto
+i = (*p)++ + *q;  ---> incorreto

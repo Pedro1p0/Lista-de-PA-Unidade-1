@@ -1,0 +1,4 @@
+ p = mat + 1; // expressão valida recebe o endereço de mat + 1
+    p = mat++; // não é valida pois não podemos incrementar um valor já que estamos passando um endereço
+    p = ++mat; // só mudou a ordem da incrementação na leitura do compilador, mas não podemos incrementar, já que estamos passando um endereço
+    x = (*mat)++; // expressão valida pois estamos incrementando um valor que sera passado para uma variavel int

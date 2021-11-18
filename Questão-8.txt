@@ -1,0 +1,3 @@
+Primeiro programa está basicamente usando um for para percorrer um vetor e exibir o conteudo de cada posição do vetor 
+para o usuario, já o segundo programa está percorrendo o vetor de maneira semelhante, mas agora está exibindo 
+o endereço de memória de cada posição do vetor e não o seu conteudo.

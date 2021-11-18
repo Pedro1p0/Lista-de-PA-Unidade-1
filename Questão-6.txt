@@ -1,0 +1,2 @@
+A expressão *(pulo+2) é a unica que é faz o que se pede, percorrendo 2 posições no vetor
+e exibindo o terceiro elemento do vetor

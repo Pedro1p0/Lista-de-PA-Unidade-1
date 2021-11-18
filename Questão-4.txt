@@ -1,0 +1,130 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int valor,idade;
+    int *p1,*p4,*p5;
+    float temp;
+    float *p2;
+    char aux;
+    char *nome="ponteiros";
+    char *p3;
+    int vetor[3];
+
+    /*
+    Letra (a)
+    */
+
+    valor = 10;  // variavel valor recebe 10
+    p1=&valor;   // ponteiro p1 aponta para o endereço de memória da variável valor
+    *p1=20;      // o ponteiro p1 altera o conteudo do endereço de memoria da variável valor para 20
+    printf("%d \n",valor);  // o usuario recebe na tela o valor 20, já que o conteudo do endereço da variável foi alterado anteriormente para 20
+
+
+    /*
+    letra (b)
+    */
+
+    temp = 26.5;   // variavel temp recebe 26.5
+    p2 = &temp;    // ponteiro aponta para o endereço de memoria da variavel temp
+    *p2 = 29.0;    // conteudo do endereço do ponteiro p2 é alterado para 29.0
+    printf("%f \n", temp);  // logo a variavel foi alterado para 29.0
+
+
+    /*
+    letra (c)
+    */
+    p3 = &nome[0];   // o ponteiro p3 recebe o endereço da posição 0 do vetor nome
+    aux = *p3;       // a variavel aux recebe o conteudo do endereço apontado por p3
+    printf("%c \n", aux); // logo o que será exibido pela variavel aux será a letra "p" já que ela é o conteudo do endereço da primeira posição do vetor nome
+
+   /*
+   letra (d)
+   */
+
+   p3 = &nome[4]; // ponteiro p3 agora recebe o endereço da posição 4 do vetor nome
+   aux = *p3 ;   // a variavel aux recebe o conteudo do endereço apontado anteriormente
+   printf("%c \n", aux); // é exibida a letra "e" que na palavra pontEiro é a posição 4 do vetor
+
+   /*
+   letra (e)
+   */
+   p3 = nome;  // ponteiro p3 recebe o endereço da primeira posição do vetor, já que não foi especificado qual posição ele receberia
+   printf("%c \n", *p3); // é exibida a letra "p" ou seja a posição nome[0]
+
+   /*
+   letra (f)
+   */
+   p3 = p3 + 4; // a ponteiro p3 agora percorre o vetor chegando na posição nome[4]
+   printf("%c \n", *p3); // agora será exibida a letra "e" ou seja a posição do vetor que o ponteiro parou ao percorrer o vetor
+
+
+   /*
+   letra (g)
+   */
+   p3--; //p3 anda uma posição para trás
+   printf("%c \n",*p3); // é exibida a letra t posição nome[3] do vetor
+
+   /*
+   letra (h)
+   */
+
+   vetor[0] = 31;  // são atribuidos valores para as posições do vetor
+   vetor[1] = 45;
+   vetor [2] = 27;
+   p4 = vetor;  // ponteiro recebe o endereço da primeira posição do vetor
+   idade = *p4; // idade recebe o valor interno do endereço
+   printf("%d \n", idade); // é exibido 31 sendo o mesmo valor do vetor[0]
+
+   /*
+   letra (i)
+   */
+
+   p5 = p4 + 1;  // ponteiro p5 apontara para o proximo byte do endereço de p4
+   idade = *p5;  // idade recebe o conteudo do endereço de p5
+   printf("%d \n", idade); // o novo valor de idade será 45 pois o ponteiro p5 aponta para o proximo conteudo do vetor, vetor[1]
+
+   /*
+   letra(j)
+   */
+
+   p4 = p5 + 1; // p4 o endereço 1 byte a frente de p5 ou seja a posição vetor[2]
+   idade = *p4; // idade recebe o conteudo do novo endereço p4
+   printf("%d \n", idade); //  a idade exibida sera 27
+
+   /*
+   letra (l)
+   */
+   p4 = p4-2; // ou seja p4 volta 2 bytes no vetor
+   idade = *p4; // idade recebe conteudo de p4
+   printf("%d \n", idade); // exibi 31 ou seja a posição vetor[0]
+
+   /*
+   letra (m)
+   */
+   p5 = &vetor[2]-1; // ou seja o ponteiro p5 ira receber o endereço do vetor[2] menos 1 byte retornando para a posição vetor [1]
+   printf("%d \n",*p5); // exibe 45 a posição vetor[1] como informado
+
+   /*
+   letra (n)
+   */
+   p5++;// anda uma posição a frente retornando para o vetor[2]
+   printf("%d \n", *p5); // exibi 27 a posição vetor[2]
+    return 0;
+}
+
+respostas obitidas 
+20
+29.0
+p
+e
+p
+e
+t
+31
+45
+27
+31
+45
+27

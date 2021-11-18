@@ -1,0 +1,20 @@
+com o valor do endereço começando em 4092 
+
+para char teremos + 1 byte 
+4092  4093    4094    4095
+ [0]   [1]    [2]    [3]
+
+
+para int teremos + 2 bytes 
+4092   4094   4096   4098
+ [0]   [1]    [2]    [3]
+
+
+para float temos +4 bytes
+4092   4096    4100   4104
+ [0]   [1]    [2]    [3]
+
+
+para double temos +8 bytes 
+4092   4100    4108   4016 
+ [0]   [1]    [2]    [3]

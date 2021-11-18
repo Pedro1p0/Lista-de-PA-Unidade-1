@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+  float vet[5] = {1.1,2.2,3.3,4.4,5.5};
+  float *f;
+  int i;
+  f = vet;
+  printf("contador/valor/valor/endereco/endereco \n\n");
+  for(i = 0 ; i <= 4 ; i++)  // utilizamos o for para percorrer o vetor vet[5]
+    {
+  printf("\n i = %d \n",i);  // exibe o contador atual que seria a posição do vetor
+  printf("vet[%d] = %.1f \n",i, vet[i]); // exibi o conteudo da posição do vetor
+  printf("*(f + %d) = %.1f \n",i, *(f+i)); // exibi o conteudo do endereço da posição do vetor
+  printf("&vet[%d] = %X \n",i, &vet[i]);  // exibi o endereço da atual posição do vetor
+  printf("(f + %d) = %X \n",i, f+i); //exibi o endereço da atual posição do vetor mas para isso somando os bytes ao atual endereço do contador
+  }
+}
