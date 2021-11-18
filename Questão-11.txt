@@ -1,0 +1,8 @@
+aloha[2] = value;           ---> correto 
+scanf("%f", &aloha);        ---> correto 
+aloha = value";             ---> incorreto, é necessário definir a posição do vetor que será preenchida pela igualdade
+printf("%f", aloha);        ---> correto 
+coisas[4][4] = aloha[3];    ---> correto 
+coisas[5] = aloha;          ---> incorreto, é impossivel atribuir um vetor dentro de um unico espaço de outro vetor 
+pf = value;                 ---> incorreto, deveria está recebendo um endereço já que é um ponteiro e não um valor 
+pf = aloha;                 ---> correto 
