@@ -3,10 +3,11 @@
 
 
 com a função qsort
-8.027 s
+0.0300 milisegundos 
 com o uso de ponteiros numa função modificada 
-4.668 s
+0.013 milisegundos
 
-como podemos ver utilizando uma função do estilo qsort mas passando os referenciais 
+como podemos ver utilizando uma função no estilo qsort modificada passando os referenciais 
 com ponteiros, obtemos para uma mesma amostra aplicada em ambas as funções,
- uma vantagem de tempo significativa em relação a função qsort.
+ uma vantagem de tempo significativa em relação a função modificada qsort.
+ Os códigos usados para capturar o tempo estão nas respectivas questões 14 e 15.
