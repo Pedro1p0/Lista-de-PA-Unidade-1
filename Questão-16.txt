@@ -1,0 +1,12 @@
+
+
+
+
+com a função qsort
+8.027 s
+com o uso de ponteiros numa função modificada 
+4.668 s
+
+como podemos ver utilizando uma função do estilo qsort mas passando os referenciais 
+com ponteiros, obtemos para uma mesma amostra aplicada em ambas as funções,
+ uma vantagem de tempo significativa em relação a função qsort.
