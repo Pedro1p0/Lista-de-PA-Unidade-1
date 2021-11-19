@@ -3,7 +3,8 @@
 
 void ordena (int n, float *vet)
 {
-    int i,j,aux;
+    int i,j;
+    float aux;
     for(i=0; i<n; i++)
     {
         for(j=0; j<n; j++)
